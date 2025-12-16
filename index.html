@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Red Team security specialist focused on enterprise offensive security assessments">
+    <title>ShadowSentry | Offensive Security Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            850: '#18212f',
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['"Fira Code"', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Force primary font for CTA buttons/text */
+  #contact a, #contact button {
+    font-family: Inter, sans-serif !important;
+    letter-spacing: normal !important;
+  }
+</style>
+
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-850 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block px-3 py-1 mb-6 text-xs bg-slate-800 text-emerald-700 rounded-full">OFFENSIVE SECURITY SPECIALIST</div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Identifying vulnerabilities <span class="text-emerald-700">before</span> adversaries do</h1>
+                <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">Methodical red team operations designed to expose security gaps in your enterprise infrastructure through ethical adversary simulation.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors">Request Assessment</a>
+                    <a href="#methodology" class="px-8 py-3 border border-slate-700 hover:border-slate-600 text-slate-300 font-medium rounded-lg transition-colors">My Methodology</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 bg-slate-850">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">01.</span> Professional Approach</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-slate-300 mb-6">With over 1 years in offensive security, I operate with a defender's mindset - identifying vulnerabilities that matter and providing actionable remediation guidance.</p>
+                        <p class="text-lg text-slate-300 mb-6">My assessments go beyond automated scanning, combining manual testing techniques with adversarial thinking to simulate real-world attack paths.</p>
+                        <p class="text-lg text-slate-300">Every engagement is conducted with strict adherence to rules of engagement, ensuring no business disruption while maximizing security value.</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-emerald-700 mb-4">Core Principles:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="shield" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Ethical execution with documented authorization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="eye" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Attacker's perspective with defender's responsibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="file-text" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Clear documentation of findings and remediation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="lock" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Strict confidentiality of client data</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 px-4 bg-slate-900">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">02.</span> Technical Capabilities</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-850 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-bold mb-4 text-emerald-700">Attack Surfaces</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Web Application Penetration Testing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Network & Infrastructure Attacks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Active Directory Compromise Chains</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Cloud Security (AWS/Azure/GCP)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Social Engineering (Phishing Simulations)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-850 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-bold mb-4 text-emerald-700">Tooling Expertise</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="tool" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Burp Suite Professional</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="tool" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Cobalt Strike / Sliver</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="tool" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>BloodHound / PowerView</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="tool" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Metasploit Framework</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="tool" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <span>Custom PowerShell/Python Tools</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="py-20 px-4 bg-slate-850">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">03.</span> Engagement Methodology</h2>
+                <div class="space-y-8">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="bg-slate-800 text-emerald-700 px-4 py-2 rounded-full flex-shrink-0">01</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Reconnaissance</h3>
+                            <p class="text-slate-300">Passive and active information gathering to identify potential attack vectors and entry points.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="bg-slate-800 text-emerald-700 px-4 py-2 rounded-full flex-shrink-0">02</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Initial Access</h3>
+                            <p class="text-slate-300">Exploiting identified vulnerabilities to establish foothold in the target environment.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="bg-slate-800 text-emerald-700 px-4 py-2 rounded-full flex-shrink-0">03</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Privilege Escalation</h3>
+                            <p class="text-slate-300">Leveraging misconfigurations and vulnerabilities to gain higher privilege access.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="bg-slate-800 text-emerald-700 px-4 py-2 rounded-full flex-shrink-0">04</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Lateral Movement</h3>
+                            <p class="text-slate-300">Traversing the network to access additional systems and sensitive data.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="bg-slate-800 text-emerald-700 px-4 py-2 rounded-full flex-shrink-0">05</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Persistence</h3>
+                            <p class="text-slate-300">Establishing mechanisms to maintain access for demonstration purposes.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="bg-slate-800 text-emerald-700 px-4 py-2 rounded-full flex-shrink-0">06</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Reporting</h3>
+                            <p class="text-slate-300">Detailed documentation of findings with risk ratings and remediation guidance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 px-4 bg-slate-900">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">04.</span> Selected Engagements</h2>
+                <div class="space-y-8">
+                    <div class="bg-slate-850 p-6 rounded-lg border border-slate-700">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Financial Services Enterprise</h3>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">2023</span>
+                        </div>
+                        <p class="text-slate-300 mb-4">Conducted red team assessment of online banking platform and internal network infrastructure.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">Web App Testing</span>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">AD Compromise</span>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">Cloud Security</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-850 p-6 rounded-lg border border-slate-700">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">Healthcare Provider</h3>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">2022</span>
+                        </div>
+                        <p class="text-slate-300 mb-4">Full-scope penetration test of patient portal and internal systems to meet HIPAA requirements.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">Network Pentest</span>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">Social Engineering</span>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">PHI Protection</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-850 p-6 rounded-lg border border-slate-700">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">E-Commerce Platform</h3>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">2021</span>
+                        </div>
+                        <p class="text-slate-300 mb-4">Payment system security assessment and fraud prevention controls testing.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">API Security</span>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">PCI DSS</span>
+                            <span class="bg-slate-800 text-xs px-2 py-1 rounded">Business Logic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 px-4 bg-slate-850">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">05.</span> Certifications</h2>
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 text-center">
+                        <div class="bg-slate-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="award" class="text-emerald-700"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">OSCP</h3>
+                        <p class="text-sm text-slate-300">Offensive Security Certified Professional</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 text-center">
+                        <div class="bg-slate-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="award" class="text-emerald-700"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">CRTO</h3>
+                        <p class="text-sm text-slate-300">Certified Red Team Operator</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 text-center">
+                        <div class="bg-slate-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="award" class="text-emerald-700"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">PNPT</h3>
+                        <p class="text-sm text-slate-300">Practical Network Penetration Tester</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports Section -->
+        <section id="reports" class="py-20 px-4 bg-slate-900">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">06.</span> Reporting Standards</h2>
+                <div class="bg-slate-850 p-6 rounded-lg border border-slate-700">
+                    <div class="text-sm bg-slate-900 p-4 rounded mb-6 overflow-x-auto">
+                        <div class="text-emerald-700"># Sample Report Structure</div>
+                        <div class="text-slate-400 mt-2">1. Executive Summary</div>
+                        <div class="text-slate-400">2. Assessment Scope</div>
+                        <div class="text-slate-400">3. Methodology</div>
+                        <div class="text-slate-400">4. Risk Ratings Matrix</div>
+                        <div class="text-slate-400">5. Technical Findings</div>
+                        <div class="text-slate-300 pl-4">- Vulnerability Description</div>
+                        <div class="text-slate-300 pl-4">- Proof of Concept</div>
+                        <div class="text-slate-300 pl-4">- Impact Analysis</div>
+                        <div class="text-slate-300 pl-4">- Remediation Guidance</div>
+                        <div class="text-slate-400">6. Conclusion</div>
+                        <div class="text-slate-400">7. Appendices</div>
+                    </div>
+                    <p class="text-slate-300">All findings are delivered with clear technical details, business impact analysis, and prioritized remediation steps. Reports are tailored to both technical teams and executive leadership.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-slate-850">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-emerald-700">07.</span> Contact</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quality-first contact</h3>
+                        <p class="text-slate-300 mb-6">
+                            I keep intake lightweight to avoid spam and to protect your details. Send a short note and I’ll reply with next steps.
+                        </p>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <a href="mailto:PhalKowm@gmail.com" class="hover:text-emerald-300 transition-colors">PhalKowm@gmail.com</a>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="linkedin" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <a href="https://www.linkedin.com/in/PhalKom" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 transition-colors">linkedin.com/in/PhalKom</a>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="github" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <a href="https://github.com/PhalKom" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 transition-colors">github.com/PhalKom</a>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="send" class="text-emerald-700 mr-3 mt-1 flex-shrink-0"></i>
+                                <a href="https://t.me/PhalKom" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 transition-colors">t.me/PhalKom</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-800/40 border border-slate-700 rounded-lg p-5">
+                            <h4 class="font-semibold mb-3">What to include (2–4 lines)</h4>
+                            <ul class="text-slate-300 space-y-2 list-disc list-inside">
+                                <li>Scope: web app / network / AD / cloud (high-level is fine)</li>
+                                <li>Timeline: when you want to start</li>
+                                <li>Constraints: NDA, allowed hours, target environment</li>
+                                <li>Optional: budget range (helps me reply faster)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-bold mb-4">Fastest way to reach me</h3>
+                        <p class="text-slate-300 mb-6">
+                            Use one of the options below. Please avoid sending sensitive credentials or customer data in the first message.
+                        </p>
+
+                        <div class="space-y-3">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=PhalKowm@gmail.com&su=Security%20Inquiry%20from%20Portfolio&body=Hi%20PhalKom%2C%0A%0AScope%3A%20%0ATimeline%3A%20%0AConstraints%3A%20%0A%0AThanks%2C"
+                               target="_blank" rel="noopener"
+                               class="w-full inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-4 rounded-lg transition-colors">
+                                Message on <span class="text-emerald-700 ml-1">Gmail</span><span class="ml-2">Web</span>
+                            </a>
+
+                            <a href="mailto:PhalKowm@gmail.com?subject=Security%20Inquiry%20from%20Portfolio&body=Hi%20PhalKom%2C%0A%0AScope%3A%20%0ATimeline%3A%20%0AConstraints%3A%20%0A%0AThanks%2C"
+                               class="w-full inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-4 rounded-lg transition-colors">
+                                <span class="text-emerald-700">Email</span><span class="ml-2">(default mail app)</span>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/PhalKom" target="_blank" rel="noopener noreferrer"
+                               class="w-full inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-4 rounded-lg transition-colors">
+                                Message on <span class="text-emerald-700 ml-1">LinkedIn</span>
+                            </a>
+
+                            <a href="https://t.me/PhalKom?text=Hi%20PhalKom%2C%0A%0AScope%3A%20%0ATimeline%3A%20%0AConstraints%3A%20%0A%0AThanks%2C"
+                               target="_blank" rel="noopener"
+                               class="w-full inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-4 rounded-lg transition-colors">
+                                Message on <span class="text-emerald-700 ml-1">Telegram</span>
+                            </a>
+
+                            <div class="text-sm text-slate-400 pt-2">
+                                If you prefer scheduling: add your Calendly/Cal.com link here later.
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+
+</html>
+
+
+
+
